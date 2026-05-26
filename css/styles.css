@@ -1,0 +1,299 @@
+body{
+    background: radial-gradient(#1d1140, #090114);
+    color:white;
+    font-family:'Arial', Arial, Helvetica, sans-serif;
+}
+
+a{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+strong{
+    color:yellow;
+}
+/*layoutgeral*/
+.layout{
+    display:flex;
+    align-items:flex-start;
+    gap:25px;
+    padding:20px;
+}
+
+main {
+    display:flex;
+    flex:1; 
+    justify-content:center;
+    align-self:flex-start;
+    padding:100px;
+    margin-right:300px;
+    border:2px solid rgba(73,255,252,0.35);
+    border-radius:20px;
+    background:rgba(64,12,162,0.15);
+}
+
+main h3 {
+    color:#7df9ff;
+    margin-bottom:20px;
+    font-family:'Arial', Arial, Helvetica, sans-serif;
+    justify-content: center;
+    text-align: center;
+    text-justify: auto;
+}
+
+.jedi h2 {
+    color:#7df9ff;
+    margin-bottom:20px;
+    font-family:'Arial', Arial, Helvetica, sans-serif;
+    justify-content: center;
+    text-align: center;
+    text-justify: auto;
+}
+.jedi h3 {
+    color:#7df9ff;
+    margin-bottom:20px;
+    font-family:'Arial', Arial, Helvetica, sans-serif;
+    justify-content: center;
+    text-align: center;
+    text-justify: auto;
+}
+
+.jedi img {
+    border:5px solid #00ffcc;
+    border-radius:50%;
+    width:300px;
+    max-width:100%;
+    height:300px;
+    display:block;
+    margin:0 auto 20px auto;
+}
+
+.jedi button {
+    margin-left: 300px;
+    width:140px;
+    height:55px;
+    margin:50px;
+    padding:15px;
+    border:none;
+    border-radius:14px;
+    background:#00ffcc;
+    color:#090114;
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor:pointer;
+    transition:0.3s; 
+}
+
+.jedi button:hover{
+    
+    transform: scale(1.25 )
+}
+/*topo*/
+
+.topo {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 60px;
+    border-bottom:1px solid rgba(45,1,126,0.919);
+    backdrop-filter:blur(8px);
+}
+
+.areaimg{
+    display:flex;
+    border-radius:50%;
+    border:5px solid rgba(73,255,252,0.996);
+}
+
+.areaimg img{
+    cursor:pointer;
+}
+
+.areaimg:hover{
+    transform:scale(1.05);
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.08);
+    padding:5px;
+    backdrop-filter:blur(15px);
+    transition:0.3s;
+}
+
+.logo h1{
+    font-family:'Arial', Arial, Helvetica, sans-serif;
+    color:#2c1866;
+    font-size:2rem;
+    text-shadow:0 0 15px #7df9ff;
+}
+
+.logo h1:hover{
+    color:#7df9ff;
+    transform:scale(1.05);
+    border:1px solid white;
+    border-radius:15px;
+    padding:5px;
+    transition:0.3s;
+}
+
+/*barradepesquisa */
+.buscar {
+    display:flex;
+    gap:10px;
+}
+
+.buscar input{
+    width:300px;
+    padding:14px;
+    border:none;
+    border-radius:14px;
+    background:#140c29;
+    color:white;
+    border:1px solid #7df9ff;
+    outline:none;
+}
+/*"::" serve para clase da classe no input, para funcionar apenas no placeholder*/
+.buscar input::placeholder{
+    color:#00ffcc;
+}
+
+.buscar button{
+    padding:14px 22px;
+    border:none;
+    border-radius:14px;
+    background:#00ffcc;
+    color:#090114;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.buscar button:hover{
+    transform:scale(1.05);
+}
+
+
+/*barralateral*/
+
+.barralateral {
+    margin-right: 50px;
+    flex-shrink:0;
+    padding:50px 50px;
+    background:rgba(16,8,33,0.85);
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.barralateral h2{
+    color:#7df9ff;
+    margin-bottom:20px;
+    font-family:'Arial', Arial, Helvetica, sans-serif;
+}
+
+.barralateral ul{
+    list-style:none;
+}
+
+.barralateral li{
+    padding:20px;
+    margin-bottom:12px;
+    margin-right: 20px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.05);
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.barralateral li:hover{
+    background:#00ffcc20;
+    transform:translateX(5px);
+}
+
+
+
+/*dicadomochileiro*/
+.dicabox{
+    position:fixed;
+    top:220px;
+    right:20px;
+    width:250px;
+    color:#c9b6ff;
+    padding:20px;
+    border-radius:20px;
+    background:linear-gradient(135deg,rgba(125,249,255,0.2),rgba(0,255,204,0.15));
+    border:1px solid rgb(65,246,255);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+/*:nth-of-type(2) seleciona o segundo elemento de um determinado tipo dentro do seu elemento pai.*/
+.dicabox:nth-of-type(2) {
+    top:420px;
+}
+
+.dicabox h3 {
+    color:#00ffcc;
+    margin-bottom:10px;
+}
+
+.dicabox p:hover{
+    color:#00ffcc;
+}
+
+.dicaimg{
+    width:100px;
+    height:auto;
+
+    object-fit:cover;
+
+    padding:5px;
+
+    display:block;
+    margin:0 auto 15px auto;
+
+    border-radius:50%;
+    border:3px solid #7df9ff;
+}
+
+.dicaimg:hover{
+    transform:scale(1.05);
+
+    background:rgba(255,255,255,0.06);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    transition:0.3s;
+}
+
+/*rodapé*/
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:justify;
+    color:#36cdff;
+    display:flex;
+    justify-content:center;
+}
+
+footer img{
+    width:40px;
+    height:40px;
+}
+
+footer a{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#36cdff;
+    margin:20px;
+    text-align:center;
+}
+
+footer p{
+    margin-top:2px;
+}
+
+/*copyright*/
+
+.copyright{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:justify;
+    color:#36cdff;
+    padding:20px 40px;
+    margin-right:290px;
+}
